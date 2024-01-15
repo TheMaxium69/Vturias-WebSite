@@ -1,0 +1,74 @@
+:root {
+    --color-primary: #cd3f88;
+    --color-secondary: #9ae5fe;
+}
+
+
+body{
+
+    /*background-color: #25102d;*/
+    /*color: white;*/
+
+}
+
+
+/**
+* NAVBAR
+**/
+header {
+    position: absolute;
+    z-index: 111;
+    width: 100%;
+}
+nav {
+    margin: 35px;
+    border-radius: 10px;
+    position: fixed!important;
+    background-color: #ffffff96 !important;
+    backdrop-filter: blur(20px);
+}
+
+.navbar-nav:last-child{
+    position: absolute;
+    float: right;
+    right: 16px;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav:last-child {
+        display: none;
+    }
+
+    .nav-reseau{
+        display: flex;
+    }
+}
+
+.navbar-toggler-perso{
+    line-height: 0;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+}
+
+.nav-reseau .nav-item{
+    margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+
+    .navbar-toggler-perso{
+        display: none;
+    }
+    .nav-reseau{
+        display: none;
+    }
+
+}
+
+.navbar-brand > img{
+    margin-top: -4px;
+    transform: scale(1.45);
+    margin-right: 5px;
+}
