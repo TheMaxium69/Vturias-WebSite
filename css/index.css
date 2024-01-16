@@ -13,7 +13,19 @@ a {
 }
 
 h1 {
-    color: #ff6363;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+h1.otherC {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+h2 {
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+h2.otherC {
+    color: var(--color-primary);
     font-weight: bold;
 }
 
@@ -199,29 +211,40 @@ p {
 .opaque-bg {
     margin-left: auto;
     margin-right: auto;
-    max-width: 380px;
+    max-width: 522px;
     padding: 1px 1px 5px 5px;
+    margin-top: -70px;
+
+    background-color: rgba(255, 255, 255, 0.17) ;
+    backdrop-filter: blur(100px) ;
+    border-radius: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-.vtuberimage {
-    background: url("https://media.discordapp.net/attachments/446049284694081546/1196527091064254654/Sans_titre.png?ex=65b7f3b0&is=65a57eb0&hm=052b1c42a094094d0cdc9f5ab62670306731c9d37a21cf95b70452e1033e0baf&=&format=webp&quality=lossless&width=759&height=427");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+
+@media (max-width: 1054px) {
 
 
+    .opaque-bg{
+        margin-top: 0px;
+        background-color: unset ;
+        backdrop-filter: unset ;
+        border-radius: unset;
+        border: unset;
+    }
 }
 
 .backimage {
-    background: linear-gradient(26deg, rgba(2, 5, 14, 0.29), rgba(2, 14, 60, 0.18) ), url("https://media.discordapp.net/attachments/772173322896539668/1196515078393041007/Ajouter_un_titre_4.png?ex=65b7e880&is=65a57380&hm=856e988dc1c3f8cdd809a2f65e76b9a1af7843479105260901031981531f488c&=&format=webp&quality=lossless&width=759&height=427");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../assets/avatar.png"), url("../assets/background_ombre.png");
+    /*linear-gradient(26deg, rgba(2, 5, 14, 0.29), rgba(2, 14, 60, 0.18) ),*/
+    background-position: center bottom, center left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
     background-attachment: fixed;
 
 
 }
+
 
 .aboutme p {
     color: white;
@@ -232,13 +255,14 @@ p {
 /* bouncing arrow */
 
 .fa-chevron-down {
-    color: var(--color-primary) !important;
+    color: white !important;
     bottom: 10px;
     margin-left: -30px;
     cursor: pointer;
     position: absolute;
     opacity: 0;
     -webkit-transition: 1.2s ease;
+    z-index: 1029;
 }
 
 /* Scroll down indicator (bouncing) */
@@ -405,13 +429,24 @@ p {
 }
 
 .fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #ff6363 !important;
+    border-color: transparent transparent transparent var(--color-primary) !important;
     right: 45px !important;
 }
 
 .fp-controlArrow.fp-prev {
-    border-color: transparent #ff6363 transparent transparent !important;
+    border-color: transparent var(--color-primary) transparent transparent !important;
     left: 45px !important;
+}
+
+@media (max-width: 398px) {
+    .fp-controlArrow.fp-next {
+        right: 4px !important;
+    }
+
+    .fp-controlArrow.fp-prev {
+        left: 4px !important;
+    }
+
 }
 
 #fp-nav ul li a span,
@@ -497,10 +532,10 @@ label {
     padding: 12px;
     min-width: 200px;
     border-radius: 2px;
-    border: 2px solid #ff6363;
+    border: 2px solid var(--color-primary);
     text-align: center;
     font-size: 1em;
-    color: #ff6363;
+    color: var(--color-primary);
     background-color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -508,7 +543,7 @@ label {
 }
 
 #submit:hover {
-    background-color: #ff6363;
+    background-color: var(--color-primary);
     color: white;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -720,4 +755,20 @@ label {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+}
+
+#reseau-footer{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+}
+
+#reseau-footer a{
+    text-decoration: unset;
+    color: black;
+}
+
+#reseau-footer a:hover{
+    text-decoration: unset;
+    color: #757575;
 }
