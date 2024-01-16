@@ -51,29 +51,29 @@
                 <p class="wow fadeInDown" data-wow-delay="0.2s">twitch.tv/doublet_creator</p>
                 <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="assets/vtuber/doublet.png">
             </div>
-            <div class="slide">
+            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">
                 <h1 style="color: #ca4949 !important;">AuroreTVv</h1>
                 <p>twitch.tv/auroretvv</p>
                 <img data-src="assets/vtuber/auroretvv.png">
             </div>
-            <div class="slide">
+            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/manosator';">
                 <h1 style="color: black!important;">Manosator</h1>
-                <p>twitch.tv/</p>
+                <p>twitch.tv/manosator</p>
                 <img data-src="assets/vtuber/mano.png">
             </div>
-            <div class="slide">
+            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/leareinepoulpe';">
                 <h1 style="color: #7e5bf4 !important;">Léa Reine Poulpe</h1>
-                <p>twitch.tv/</p>
+                <p>twitch.tv/leareinepoulpe</p>
                 <img data-src="assets/vtuber/léa.png">
             </div>
-            <div class="slide">
+            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/jiyuvt';">
                 <h1 style="color: #605d5d !important;">JiyuVT</h1>
-                <p>twitch.tv/</p>
+                <p>twitch.tv/jiyuvt</p>
                 <img data-src="assets/vtuber/jiyu.png">
             </div>
-            <div class="slide">
+            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/nonijiangshi';">
                 <h1 style="color: #7a1cb7 !important;">NoniJiangshi</h1>
-                <p>twitch.tv/</p>
+                <p>twitch.tv/nonijiangshi</p>
                 <img data-src="assets/vtuber/noni.png">
             </div>
         </div>
