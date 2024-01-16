@@ -82,9 +82,19 @@
 
     <!-- begin section -->
     <div class="section" data-anchor="create">
-        <div class="content">
+        <div class="content" id="create">
             <h1 class="wow fadeInDown" data-wow-delay="0.2s">Création de Vturias </h1>
             <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web Designer & Front-end Developer focused on creating clean, responsive web designs!</p>
+
+            <div class="row">
+
+                <div class="col">
+                    <a target="_bank" href="https://tyrolium.fr/" title="Tyrolium">
+                        <img src="https://tyrolium.fr/Contenu/Image/Tyrolium.png" alt="tyrolium">
+                    </a>
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -92,6 +102,47 @@
 
     <!-- begin section -->
     <div class="section" data-anchor="partenaire">
+
+        <div id="partenaire" class="content">
+
+
+            <h1 class="wow fadeInDown" data-wow-delay="0.2s">Nos Partenaire </h1>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">
+                Voici les entreprises, organisations et collectivités qui nous font confiance, et qu'on travaille activement à l'amélioration et la création de projets.
+            </p>
+
+
+            <div class="part-desktop">
+                <div class="row">
+
+                    <div class="col">
+                        <a target="_bank" href="https://www.lafrenchtech-onelse.com/" title="French Tech One Lyon St-Étienne">
+                            <img src="https://tyrolium.fr/assets/part/frenchtechlyon.png" alt="frenchtech">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a target="_bank" href="https://www.auvergnerhonealpes.fr/" title="La Region Auvergne-Rhône-Alpes">
+                            <img src="https://tyrolium.fr/assets/part/auvergne-Rhone-Alphes.png" alt="Auvergne-Rhône-Alphes">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a target="_bank" href="https://www.grandest.fr/" title="La Region Grand Est">
+                            <img src="https://tyrolium.fr/assets/part/grandest.png" alt="Grand Est">
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a target="_bank" href="https://www.linkedin.com/company/g%C3%A9n%C3%A9ration-ium/" title="Génératium IUM">
+                            <img src="https://tyrolium.fr/assets/part/Generatium-ium.png" alt="generatium-ium">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- end section -->
 
@@ -104,8 +155,8 @@
             <br>
             <div class="contact-form">
 
-                <div id="form-messages"></div>
-                <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+<!--                <div id="form-messages"></div>-->
+                <form method="get" role="form" action="api/get.php">
                     <div class="form-group has-feedback wow fadeInUp" data-wow-delay="0.6s">
                         <input type="text" class="form-control" id="name" name="name" placeholder="NOM" data-error="Field can't be blank!" required>
                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
@@ -119,14 +170,14 @@
                     </div>
 
                     <div class="form-group has-feedback wow fadeInUp" data-wow-delay="1s">
-                        <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+                        <textarea data-minlength="10" class="form-control" id="message" name="content" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                         <div class="help-block with-errors"></div>
                     </div>
 
-                    <div class="hidden">
+                  <!--  <div class="hidden">
                         <input type="hidden" class="form-control" id="human" name="human" placeholder="">
-                    </div>
+                    </div>-->
                     <div class="wow fadeInUp" data-wow-delay="1s">
                         <button type="submit" id="submit" name="submit" class="btn btn-lg">ENVOYÉ VOTRE MESSAGE</button>
                     </div>
@@ -178,6 +229,35 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
 <script src="js/scroll.js"></script>
+
+<!-- NOTIF -->
+<script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+<script  src="js/notif.js"></script>
+
+
+<?php if (!empty($_GET['err'])) { ?>
+
+        <script>
+            if(Text != 1){
+                iziToast.error({
+                    title: 'Erreur',
+                    position: 'bottomRight',
+                    message: 'Une erreur est survenue | Code : <?php echo $_GET['err']; ?>'
+                });
+            }
+        </script>
+
+<?php } if (!empty($_GET['true'])) {?>
+    <script>
+        if(Text != 1){
+            iziToast.success({
+                title: 'OK',
+                position: 'bottomRight',
+                message: 'Votre demande a bien été envoyé !'
+            });
+        }
+    </script>
+<?php } ?>
 
 
 </body> </html>

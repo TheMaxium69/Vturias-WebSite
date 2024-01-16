@@ -6,6 +6,8 @@ function head($page)
     //Page
     if ($page == 1) {
         $title = "Vturias";
+    } else if ($page == 2) {
+        $title = "Légal | Vturias";
     } else {
         $title = "404 | Vturias";
     }

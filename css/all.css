@@ -1,6 +1,6 @@
 :root {
     --color-primary: #fd46a4;
-    --color-secondary: #6edbff;
+    --color-secondary: #2dc5f7;
 }
 
 
@@ -77,7 +77,12 @@ nav {
 }
 
 .navbar-brand > img{
-    margin-top: -4px;
+    /*margin-top: -4px;*/
     transform: scale(1.45);
     margin-right: 5px;
+}
+
+#legal p{
+        margin-top: 15px;
+        margin-bottom: 0px;
 }
