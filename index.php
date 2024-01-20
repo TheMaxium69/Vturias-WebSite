@@ -23,7 +23,13 @@
     <div class="section" data-anchor="about">
         <div class="content">
             <h1 class="wow fadeInDown" data-wow-delay="0.2s">À PROPOS DE NOUS </h1>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web Designer & Front-end Developer focused on creating clean, responsive web designs!</p>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">
+
+
+                Bienvenue chez Vturias, votre passerelle vers l'univers captivant des VTubers francophones ! Nous sommes une agence dédiée à la création, à la promotion et à l'essor des talents virtuels dans le monde.nous croyons que chacun a une histoire unique à partager, et notre mission est de donner vie à ces récits. Que vous soyez un créateur de contenu émergent ou un VTuber chevronné, notre équipe dévouée vous accompagne à chaque étape de votre parcours virtuel.
+
+
+            </p>
 
             <!--<br><br>
             <div style="display: flex">
@@ -46,16 +52,16 @@
     <!-- begin section -->
     <div class="section" data-anchor="vtuber">
         <div class="content-slide">
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/doublet_creator';">
-                <h1 style="color: rgb(255, 60, 0)!important;" class="wow fadeInDown" data-wow-delay="0.2s">DoubleT</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">twitch.tv/doublet_creator</p>
-                <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="assets/vtuber/doublet.png">
-            </div>
             <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">
+                <h1 style="color: #ca4949!important;" class="wow fadeInDown" data-wow-delay="0.2s">AuroreTVv</h1>
+                <p class="wow fadeInDown" data-wow-delay="0.2s">twitch.tv/auroretvv</p>
+                <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="assets/vtuber/auroretvv.png">
+            </div>
+            <!--<div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">
                 <h1 style="color: #ca4949 !important;">AuroreTVv</h1>
                 <p>twitch.tv/auroretvv</p>
                 <img data-src="assets/vtuber/auroretvv.png">
-            </div>
+            </div>-->
             <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/manosator';">
                 <h1 style="color: black!important;">Manosator</h1>
                 <p>twitch.tv/manosator</p>
@@ -76,6 +82,11 @@
                 <p>twitch.tv/nonijiangshi</p>
                 <img data-src="assets/vtuber/noni.png">
             </div>
+            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/doublet_creator';">
+                <h1 style="color: rgb(255, 60, 0)!important;">DoubleT</h1>
+                <p>twitch.tv/doublet_creator</p>
+                <img data-src="assets/vtuber/doublet.png">
+            </div>
         </div>
     </div>
     <!-- end section -->
@@ -84,13 +95,24 @@
     <div class="section" data-anchor="create">
         <div class="content" id="create">
             <h1 class="wow fadeInDown" data-wow-delay="0.2s">Création de Vturias </h1>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web Designer & Front-end Developer focused on creating clean, responsive web designs!</p>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">
+
+                Vturias est le résultat d'un partenariat entre deux entreprises, Tyrolium et L'Aurora. Ces deux entreprises s'allient pour vous offrir un moyen d'être épaulé et guidé tout au long de votre parcours en tant que créateur de contenu virtuel.
+
+
+            </p>
 
             <div class="row">
 
                 <div class="col">
-                    <a target="_bank" href="https://tyrolium.fr/" title="Tyrolium">
+                    <a target="_bank" href="https://tyrolium.fr" title="Tyrolium">
                         <img src="https://tyrolium.fr/Contenu/Image/Tyrolium.png" alt="tyrolium">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a target="_bank" href="https://www.aurorastore.fr" title="aurora">
+                        <img src="https://media.discordapp.net/attachments/772173322896539668/1198336529945341962/image.png?ex=65be88dc&is=65ac13dc&hm=378c7403c10455edfec02f2ff3007c475092a94d3e646f78b2a772af3d0e3d5e&=&format=webp&quality=lossless" alt="aurora">
                     </a>
                 </div>
 
