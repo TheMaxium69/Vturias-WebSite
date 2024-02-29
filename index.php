@@ -112,7 +112,7 @@
 
                 <div class="col">
                     <a target="_bank" href="https://www.aurorastore.fr" title="aurora">
-                        <img src="https://media.discordapp.net/attachments/772173322896539668/1198336529945341962/image.png?ex=65be88dc&is=65ac13dc&hm=378c7403c10455edfec02f2ff3007c475092a94d3e646f78b2a772af3d0e3d5e&=&format=webp&quality=lossless" alt="aurora">
+                        <img src="assets/aurora.png" alt="aurora">
                     </a>
                 </div>
 
