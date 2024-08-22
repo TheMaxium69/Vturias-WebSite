@@ -178,7 +178,7 @@
             <div class="contact-form">
 
 <!--                <div id="form-messages"></div>-->
-                <form method="get" role="form" action="api/get.php">
+                <form method="post" role="form" action="https://formspree.io/f/movaknve">
                     <div class="form-group has-feedback wow fadeInUp" data-wow-delay="0.6s">
                         <input type="text" class="form-control" id="name" name="name" placeholder="NOM" data-error="Field can't be blank!" required>
                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
