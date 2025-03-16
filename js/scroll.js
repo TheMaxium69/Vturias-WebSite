@@ -79,8 +79,8 @@ $(document).ready(function () {
         scrollBar: true,
         responsiveWidth: 400,
         navigation: true,
-        navigationTooltips: ["Vue", "À propos", "Vtuber", "Création", "Partenaire", "Contact", "Fin"],
-        anchors: ["view", "about", "vtuber", "create", "partenaire", "contact", "end"],
+        navigationTooltips: ["Vue", "À propos", "Création", "Partenaire", "Contact", "Fin"],
+        anchors: ["view", "about", "create", "partenaire", "contact", "end"],
         menu: "#myMenu",
         fitToSection: false,
 

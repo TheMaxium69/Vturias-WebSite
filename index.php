@@ -50,45 +50,45 @@
     <!-- end section -->
 
     <!-- begin section -->
-    <div class="section" data-anchor="vtuber">
-        <div class="content-slide">
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">
-                <h1 style="color: #ca4949!important;" class="wow fadeInDown" data-wow-delay="0.2s">AuroreTVv</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">twitch.tv/auroretvv</p>
-                <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="assets/vtuber/auroretvv.png">
-            </div>
-            <!--<div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">
-                <h1 style="color: #ca4949 !important;">AuroreTVv</h1>
-                <p>twitch.tv/auroretvv</p>
-                <img data-src="assets/vtuber/auroretvv.png">
-            </div>-->
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/manosator';">
-                <h1 style="color: black!important;">Manosator</h1>
-                <p>twitch.tv/manosator</p>
-                <img data-src="assets/vtuber/mano.png">
-            </div>
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/leareinepoulpe';">
-                <h1 style="color: #7e5bf4 !important;">Léa Reine Poulpe</h1>
-                <p>twitch.tv/leareinepoulpe</p>
-                <img data-src="assets/vtuber/léa.png">
-            </div>
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/jiyuvt';">
-                <h1 style="color: #605d5d !important;">JiyuVT</h1>
-                <p>twitch.tv/jiyuvt</p>
-                <img data-src="assets/vtuber/jiyu.png">
-            </div>
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/nonijiangshi';">
-                <h1 style="color: #7a1cb7 !important;">NoniJiangshi</h1>
-                <p>twitch.tv/nonijiangshi</p>
-                <img data-src="assets/vtuber/noni.png">
-            </div>
-            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/doublet_creator';">
-                <h1 style="color: rgb(255, 60, 0)!important;">DoubleT</h1>
-                <p>twitch.tv/doublet_creator</p>
-                <img data-src="assets/vtuber/doublet.png">
-            </div>
-        </div>
-    </div>
+<!--    <div class="section" data-anchor="vtuber">-->
+<!--        <div class="content-slide">-->
+<!--            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">-->
+<!--                <h1 style="color: #ca4949!important;" class="wow fadeInDown" data-wow-delay="0.2s">AuroreTVv</h1>-->
+<!--                <p class="wow fadeInDown" data-wow-delay="0.2s">twitch.tv/auroretvv</p>-->
+<!--                <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="assets/vtuber/auroretvv.png">-->
+<!--            </div>-->
+<!--            <!--<div class="slide" onclick="window.location.href = 'https://www.twitch.tv/auroretvv';">-->
+<!--                <h1 style="color: #ca4949 !important;">AuroreTVv</h1>-->
+<!--                <p>twitch.tv/auroretvv</p>-->
+<!--                <img data-src="assets/vtuber/auroretvv.png">-->
+<!--            </div>-->-->
+<!--            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/manosator';">-->
+<!--                <h1 style="color: black!important;">Manosator</h1>-->
+<!--                <p>twitch.tv/manosator</p>-->
+<!--                <img data-src="assets/vtuber/mano.png">-->
+<!--            </div>-->
+<!--            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/leareinepoulpe';">-->
+<!--                <h1 style="color: #7e5bf4 !important;">Léa Reine Poulpe</h1>-->
+<!--                <p>twitch.tv/leareinepoulpe</p>-->
+<!--                <img data-src="assets/vtuber/léa.png">-->
+<!--            </div>-->
+<!--            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/jiyuvt';">-->
+<!--                <h1 style="color: #605d5d !important;">JiyuVT</h1>-->
+<!--                <p>twitch.tv/jiyuvt</p>-->
+<!--                <img data-src="assets/vtuber/jiyu.png">-->
+<!--            </div>-->
+<!--            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/nonijiangshi';">-->
+<!--                <h1 style="color: #7a1cb7 !important;">NoniJiangshi</h1>-->
+<!--                <p>twitch.tv/nonijiangshi</p>-->
+<!--                <img data-src="assets/vtuber/noni.png">-->
+<!--            </div>-->
+<!--            <div class="slide" onclick="window.location.href = 'https://www.twitch.tv/doublet_creator';">-->
+<!--                <h1 style="color: rgb(255, 60, 0)!important;">DoubleT</h1>-->
+<!--                <p>twitch.tv/doublet_creator</p>-->
+<!--                <img data-src="assets/vtuber/doublet.png">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!-- end section -->
 
     <!-- begin section -->
@@ -214,7 +214,7 @@
     <div class="section fp-auto-height"  data-anchor="end">
 
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            Copyright © 2017-2024 All Rights Reserved by <a class="text-reset fw-bold" href="https://tyrolium.fr/">Tyrolium</a>.
+            Copyright © 2017-<?= date("Y"); ?> All Rights Reserved by <a class="text-reset fw-bold" href="https://tyrolium.fr/">Tyrolium</a>.
 
             <div id="reseau-footer">
                 <div class="nav-item active">
