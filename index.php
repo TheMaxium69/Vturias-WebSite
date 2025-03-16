@@ -26,8 +26,7 @@
             <p class="wow fadeInDown" data-wow-delay="0.2s">
 
 
-                Bienvenue chez Vturias, votre passerelle vers l'univers captivant des VTubers francophones ! Nous sommes une agence dédiée à la création, à la promotion et à l'essor des talents virtuels dans le monde.nous croyons que chacun a une histoire unique à partager, et notre mission est de donner vie à ces récits. Que vous soyez un créateur de contenu émergent ou un VTuber chevronné, notre équipe dévouée vous accompagne à chaque étape de votre parcours virtuel.
-
+                Bienvenue chez Vturias, votre passerelle vers l'univers captivant des VTubers francophones ! Nous sommes une agence dédiée à la création, à la promotion et à l'essor des talents virtuels. Nous croyons que chacun a une histoire unique à partager, et notre mission est de donner vie à ces récits. Que vous soyez un créateur de contenu émergent ou un VTuber chevronné, notre équipe dévouée vous accompagne à chaque étape de votre parcours virtuel.
 
             </p>
 
@@ -130,7 +129,7 @@
 
             <h1 class="wow fadeInDown" data-wow-delay="0.2s">Nos Partenaire </h1>
             <p class="wow fadeInDown" data-wow-delay="0.2s">
-                Voici les entreprises, organisations et collectivités qui nous font confiance, et qu'on travaille activement à l'amélioration et la création de projets.
+                Voici les entreprises, organisations et collectivités qui nous font confiance et avec lesquelles nous travaillons activement à l'amélioration et à la création de projets.
             </p>
 
 
@@ -201,7 +200,7 @@
                         <input type="hidden" class="form-control" id="human" name="human" placeholder="">
                     </div>-->
                     <div class="wow fadeInUp" data-wow-delay="1s">
-                        <button type="submit" id="submit" name="submit" class="btn btn-lg">ENVOYÉ VOTRE MESSAGE</button>
+                        <button type="submit" id="submit" name="submit" class="btn btn-lg">ENVOYEZ VOTRE MESSAGE</button>
                     </div>
                 </form>
                 <br>
