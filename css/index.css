@@ -836,6 +836,19 @@ label {
 }
 
 /*TALENT*/
+@media (max-width: 450px) {
+    #talentContent .backVtuber{
+        height: 200px!important;
+        width: 200px!important;
+    }
+
+    #talentContent .imgVtuber {
+        width: 200px!important;
+        height: 200px!important;
+    }
+}
+
+
 #talentContent .row{
     width: 100%;
     margin: auto 0;
