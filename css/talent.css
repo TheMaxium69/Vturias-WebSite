@@ -21,35 +21,35 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* --- Mode Sombre --- */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--bg-dark);
-        color: var(--text-dark);
-    }
-    .card {
-        background-color: var(--card-bg-dark);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
-    .product-title, .info-value, .image-detail-title {
-        color: var(--text-dark);
-    }
-    .product-description, .info-label, .image-description-text, .thumbnail-title {
-        color: var(--subtext-dark);
-    }
-    .info-color-swatch {
-        border-color: #4b5563;
-    }
-    .thumbnail-scrollbar::-webkit-scrollbar-track {
-        background: #2d3748;
-    }
-    .thumbnail-scrollbar::-webkit-scrollbar-thumb {
-        background: #4a5568;
-    }
-    .thumbnail-scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #718096;
-    }
-}
+/*!* --- Mode Sombre --- *!*/
+/*@media (prefers-color-scheme: dark) {*/
+/*    body {*/
+/*        background-color: var(--bg-dark);*/
+/*        color: var(--text-dark);*/
+/*    }*/
+/*    .card {*/
+/*        background-color: var(--card-bg-dark);*/
+/*        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);*/
+/*    }*/
+/*    .product-title, .info-value, .image-detail-title {*/
+/*        color: var(--text-dark);*/
+/*    }*/
+/*    .product-description, .info-label, .image-description-text, .thumbnail-title {*/
+/*        color: var(--subtext-dark);*/
+/*    }*/
+/*    .info-color-swatch {*/
+/*        border-color: #4b5563;*/
+/*    }*/
+/*    .thumbnail-scrollbar::-webkit-scrollbar-track {*/
+/*        background: #2d3748;*/
+/*    }*/
+/*    .thumbnail-scrollbar::-webkit-scrollbar-thumb {*/
+/*        background: #4a5568;*/
+/*    }*/
+/*    .thumbnail-scrollbar::-webkit-scrollbar-thumb:hover {*/
+/*        background: #718096;*/
+/*    }*/
+/*}*/
 
 /* --- Mise en Page Principale --- */
 .container {
@@ -208,6 +208,7 @@ body {
     font-weight: 700;
     font-size: 1.125rem;
     margin-bottom: 0.25rem;
+    color: black!important;
 }
 
 .image-description-text {
