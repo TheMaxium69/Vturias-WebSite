@@ -35,7 +35,7 @@ export const TALENTS: ITalent[] = [
     },
     traits: [
       { en: 'Endearing', fr: 'Attachante' },
-      { en: 'Grumpy',    fr: 'Raleuse' },
+      { en: 'Grumpy',    fr: 'Râleuse' },
       { en: 'Leader',    fr: 'Leadeuse' },
     ],
     socials: [
@@ -88,7 +88,7 @@ export const TALENTS: ITalent[] = [
     birthday: '25/05',
     description: {
       en: "Young and joyful dragon in search of perilous adventures. A lover of great stories and games of all kinds.",
-      fr: "Jeune et joyeux dragon en quête daventures périlleuses. Amateur de belles histoires et de jeux en tous genres.",
+      fr: "Jeune et joyeux dragon en quête d'aventures périlleuses. Amateur de belles histoires et de jeux en tous genres.",
     },
     traits: [
       { en: 'Gentle',      fr: 'Doux' },
@@ -121,7 +121,7 @@ export const TALENTS: ITalent[] = [
     },
     traits: [
       { en: 'Leadership',  fr: 'Leadership' },
-      { en: 'Literal',     fr: 'Premier Degrès' },
+      { en: 'Literal',     fr: 'Premier Degré' },
       { en: 'Arrogant',    fr: 'Arrogant' },
       { en: 'Charismatic', fr: 'Charismatique' },
     ],
