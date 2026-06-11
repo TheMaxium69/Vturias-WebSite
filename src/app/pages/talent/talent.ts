@@ -4,6 +4,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import { TyroUiLangService } from 'tyrolium-ui';
 import { TALENTS } from '../../data/talents.data';
+import { GALLERY_MANIFEST } from '../../data/gallery-manifest.generated';
 
 @Component({
   selector: 'app-talent',
@@ -27,9 +28,8 @@ export class TalentPage {
   readonly gallery = computed(() => {
     const t = this.talent();
     if (!t) return [];
-    const imgs = [t.images.avatar, t.images.simple];
-    if (t.images.chibi) imgs.push(t.images.chibi);
-    return [...imgs, ...t.images.others];
+    const key = t.images.galleryFolder ?? t.slug;
+    return GALLERY_MANIFEST[key] ?? [];
   });
 
   lightboxIndex = signal<number | null>(null);
