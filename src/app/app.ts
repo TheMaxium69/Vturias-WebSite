@@ -16,8 +16,8 @@ export class App {
 
   public PROJECT_CONTENT = computed(() =>
     this.langService.lang() === 'en'
-      ? `<strong>Vturias</strong> is a <strong>French VTubing agency</strong> dedicated to creating, promoting, and growing virtual talent. A <em>Tyrolium</em> project, born from the partnership with VTuber AuroreTVv.`
-      : `<strong>Vturias</strong> est une <strong>agence de VTubing française</strong> dédiée à la création, la promotion et le développement des talents virtuels. Un projet <em>Tyrolium</em>, né du partenariat avec la VTubeuse AuroreTVv.`
+      ? `<strong>Vturias</strong> is a <strong>French VTubing agency</strong> dedicated to creating, promoting, and growing virtual talent. A <em>Tyrolium</em> subsidiary, born from the partnership with VTuber AuroreTVv.`
+      : `<strong>Vturias</strong> est une <strong>agence de VTubing française</strong> dédiée à la création, la promotion et le développement des talents virtuels. Une filiale de <em>Tyrolium</em>, née du partenariat avec la VTubeuse AuroreTVv.`
   );
 
   public pages = computed<ITyroUiNavbarPages[]>(() =>
