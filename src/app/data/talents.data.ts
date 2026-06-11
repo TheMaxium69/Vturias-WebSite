@@ -113,7 +113,7 @@ export const TALENTS: ITalent[] = [
     slug: 'vmaxime',
     name: 'VMaxime',
     color: '#ff5e6b',
-    species: { en: 'Plain Human...', fr: 'Humain Banal ...' },
+    species: { en: 'Plain Human', fr: 'Humain Banal' },
     birthday: '09/12',
     description: {
       en: "Travels between our world and that of VTubers to create shows that cover every universe.",
