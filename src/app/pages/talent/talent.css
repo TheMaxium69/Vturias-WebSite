@@ -198,6 +198,7 @@
   width: 100%;
   z-index: 3;
   pointer-events: none;
+  user-select: none;
 }
 
 .talent-wave-svg {
@@ -339,6 +340,7 @@
   align-items: center;
   justify-content: center;
   transition: background 0.2s, transform 0.2s;
+  z-index: 2;
 }
 
 .lb-arrow:hover { background: rgba(255, 255, 255, 0.22); }
@@ -413,7 +415,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 24px;
-    padding-bottom: 100px;
+    padding-bottom: 160px;
     gap: 16px;
   }
 
@@ -439,7 +441,11 @@
     justify-content: center;
   }
 
-  .talent-back { align-self: center; }
+  .talent-back {
+    align-self: center;
+    position: relative;
+    z-index: 4;
+  }
 }
 
 @media (max-width: 600px) {
