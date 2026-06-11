@@ -1,0 +1,239 @@
+<!-- ═══════════════════════════════════ HERO ════════════════════════════════════ -->
+<section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+
+  <img src="assets/avatar.png" class="hero-avatars" alt="" />
+
+  <div class="hero-content">
+    <img src="assets/tyrolium-ui/projects/Vturias.png" alt="Vturias Logo" class="hero-logo" />
+    <h1 class="hero-title">
+      VTURIAS<span class="hero-slash">&nbsp;/&nbsp;</span>AGENCY
+    </h1>
+    <p class="hero-tagline">
+      {{ lang() === 'en'
+        ? 'The professional French VTubing agency'
+        : "L'agence de vtubing professionnelle en France" }}
+    </p>
+    <div class="hero-actions">
+      <button class="vt-btn hero-btn--primary" (click)="scrollTo('talents')">
+        <i class="ri-star-line"></i>
+        {{ lang() === 'en' ? 'Our Talents' : 'Nos Talents' }}
+      </button>
+    </div>
+  </div>
+
+  <div class="hero-wave">
+    <svg class="hero-wave-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="vt-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="hero-wave-parallax">
+        <use xlink:href="#vt-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+        <use xlink:href="#vt-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#vt-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#vt-wave" x="48" y="7" fill="#ffffff" />
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+<section id="about" class="vt-section">
+  <div class="vt-container">
+    <h2 class="vt-section-title">
+      <span class="vt-gradient-text">
+        {{ lang() === 'en' ? 'About Us' : 'À propos de nous' }}
+      </span>
+    </h2>
+    <p class="vt-section-sub">
+      {{ lang() === 'en'
+        ? 'Welcome to Vturias, your gateway to the captivating world of francophone VTubers! We are an agency dedicated to creating, promoting and growing virtual talent. We believe everyone has a unique story to share, and our mission is to bring those stories to life.'
+        : "Bienvenue chez Vturias, votre passerelle vers l'univers captivant des VTubers francophones ! Nous sommes une agence dédiée à la création, à la promotion et à l'essor des talents virtuels. Nous croyons que chacun a une histoire unique à partager, et notre mission est de donner vie à ces récits." }}
+    </p>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="about-card-icon">
+          <i class="ri-user-star-line"></i>
+        </div>
+        <h3>{{ lang() === 'en' ? 'Talent Support' : 'Accompagnement' }}</h3>
+        <p>
+          {{ lang() === 'en'
+            ? 'We support each VTuber at every step of their virtual journey, from debut to growth.'
+            : 'Nous accompagnons chaque VTuber à chaque étape de son parcours, du debut à la croissance.' }}
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">
+          <i class="ri-broadcast-line"></i>
+        </div>
+        <h3>{{ lang() === 'en' ? 'Promotion' : 'Promotion' }}</h3>
+        <p>
+          {{ lang() === 'en'
+            ? 'We amplify your reach with strategic promotion across all major platforms.'
+            : 'Nous amplifiez votre portée grâce à une promotion stratégique sur toutes les plateformes.' }}
+        </p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">
+          <i class="ri-team-line"></i>
+        </div>
+        <h3>{{ lang() === 'en' ? 'Community' : 'Communauté' }}</h3>
+        <p>
+          {{ lang() === 'en'
+            ? 'Join a thriving community of virtual creators and passionate fans.'
+            : 'Rejoignez une communauté dynamique de créateurs virtuels et de fans passionnés.' }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ TALENTS ══════════════════════════════════ -->
+<section id="talents" class="vt-section vt-section--alt">
+  <div class="vt-container">
+    <h2 class="vt-section-title">
+      <span class="vt-gradient-text">
+        {{ lang() === 'en' ? 'Our Talents' : 'Nos Talents' }}
+      </span>
+    </h2>
+    <p class="vt-section-sub">
+      {{ lang() === 'en'
+        ? 'Meet the extraordinary virtual personalities that make Vturias shine.'
+        : 'Découvrez les personnalités virtuelles extraordinaires qui font briller Vturias.' }}
+    </p>
+
+    <div class="talents-grid">
+      @for (talent of talents; track talent.name) {
+        <a class="talent-card" [routerLink]="['/talent', talent.slug]" [style.--tc]="talent.color">
+          <img class="talent-card__img" [src]="talent.images.fullBody" [alt]="talent.name" />
+          <div class="talent-card__footer">
+            <span class="talent-card__name">{{ talent.name }}</span>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ SERVICES ═════════════════════════════════ -->
+<section id="services" class="vt-section">
+  <div class="vt-container">
+    <h2 class="vt-section-title">
+      <span class="vt-gradient-text">
+        {{ lang() === 'en' ? 'Our Services' : 'Nos Services' }}
+      </span>
+    </h2>
+    <p class="vt-section-sub">
+      {{ lang() === 'en'
+        ? 'Everything a VTuber needs to shine — from debut to recognition.'
+        : 'Tout ce dont un VTuber a besoin pour briller, des débuts à la reconnaissance.' }}
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-card__icon"><i class="ri-shield-user-line"></i></div>
+        <div class="service-card__body">
+          <h3>{{ lang() === 'en' ? 'Talent Management' : 'Gestion des Talents' }}</h3>
+          <p>{{ lang() === 'en'
+            ? 'Personalised support, contract management and strategic career guidance for every talent.'
+            : 'Accompagnement personnalisé, gestion des contrats et orientation stratégique de carrière pour chaque talent.' }}</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon"><i class="ri-live-line"></i></div>
+        <div class="service-card__body">
+          <h3>{{ lang() === 'en' ? 'Content Production' : 'Production de Contenu' }}</h3>
+          <p>{{ lang() === 'en'
+            ? 'Stream overlays, 2D/3D assets, video editing and full technical support for high-quality broadcasts.'
+            : 'Overlays de stream, assets 2D/3D, montage vidéo et support technique complet pour des diffusions de qualité.' }}</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon"><i class="ri-megaphone-line"></i></div>
+        <div class="service-card__body">
+          <h3>{{ lang() === 'en' ? 'Marketing & Partnerships' : 'Marketing & Partenariats' }}</h3>
+          <p>{{ lang() === 'en'
+            ? 'Brand deals, sponsored content, event appearances and targeted promotion across all major platforms.'
+            : 'Partenariats de marque, contenus sponsorisés, apparitions en événements et promotion ciblée sur toutes les plateformes.' }}</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-card__icon"><i class="ri-group-line"></i></div>
+        <div class="service-card__body">
+          <h3>{{ lang() === 'en' ? 'Community Building' : 'Animation de Communauté' }}</h3>
+          <p>{{ lang() === 'en'
+            ? 'Discord management, fan engagement strategies and community events to grow a loyal fanbase.'
+            : 'Gestion du Discord, stratégies d\'engagement et événements pour bâtir une fanbase fidèle et dynamique.' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ JOIN ═════════════════════════════════════ -->
+<section id="join" class="vt-section vt-section--alt">
+  <div class="vt-container">
+    <h2 class="vt-section-title">
+      <span class="vt-gradient-text">
+        {{ lang() === 'en' ? 'How to join us' : 'Nous rejoindre' }}
+      </span>
+    </h2>
+    <p class="vt-section-sub">
+      {{ lang() === 'en'
+        ? 'Four simple steps to become part of the Vturias family.'
+        : 'Quatre étapes simples pour rejoindre la famille Vturias.' }}
+    </p>
+
+    <div class="join-steps">
+      <div class="join-step">
+        <div class="join-step__num">1</div>
+        <div class="join-step__body">
+          <h3>{{ lang() === 'en' ? 'Apply' : 'Candidature' }}</h3>
+          <p>{{ lang() === 'en' ? 'Send us your profile and your project.' : 'Envoyez-nous votre profil et votre projet.' }}</p>
+        </div>
+      </div>
+      <div class="join-step__line"></div>
+      <div class="join-step">
+        <div class="join-step__num">2</div>
+        <div class="join-step__body">
+          <h3>{{ lang() === 'en' ? 'Interview' : 'Entretien' }}</h3>
+          <p>{{ lang() === 'en' ? 'A call to get to know you and your vision.' : 'Un échange pour mieux vous connaître et cerner votre vision.' }}</p>
+        </div>
+      </div>
+      <div class="join-step__line"></div>
+      <div class="join-step">
+        <div class="join-step__num">3</div>
+        <div class="join-step__body">
+          <h3>{{ lang() === 'en' ? 'Debut' : 'Débuts' }}</h3>
+          <p>{{ lang() === 'en' ? 'Your official launch supported by the full team.' : 'Votre lancement officiel, soutenu par toute l\'équipe.' }}</p>
+        </div>
+      </div>
+      <div class="join-step__line"></div>
+      <div class="join-step">
+        <div class="join-step__num">4</div>
+        <div class="join-step__body">
+          <h3>{{ lang() === 'en' ? 'Growth' : 'Croissance' }}</h3>
+          <p>{{ lang() === 'en' ? 'Ongoing support to grow your audience and career.' : 'Un accompagnement continu pour développer votre audience et votre carrière.' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ CONTACT ══════════════════════════════════ -->
+<tyro-ui-cta
+    [label]="lang() === 'en' ? 'Open applications' : 'Candidatures ouvertes' "
+    [title]="lang() === 'en' ? 'Contact Us' : 'Contactez-Nous'"
+    [content]="lang() === 'en'
+        ? 'Whether for a collaboration or simply to share your projects, we look forward to hearing from you.'
+        : 'Que ce soit pour envisager une collaboration ou simplement pour nous faire part de vos projets, nous sommes impatients de recevoir de vos nouvelles.'"
+    [btnLink]="'https://tyrolium.fr/contact?from=vturias'"
+    [btn]="lang() === 'en' ? 'Contact Us' : 'Contactez-Nous'"
+    [btnIcon]="`<i class='ri-mail-send-line'></i>`"
+    [subbtn]="lang() === 'en' ? 'See our talents' : 'Voir nos talents'"
+    [subAncreLink]="'talents'"
+    [notBack]="true"
+    [vturias]="true"
+></tyro-ui-cta>
