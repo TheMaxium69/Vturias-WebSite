@@ -1,4 +1,4 @@
-// AUTO-GENERATED — ne pas éditer manuellement
+// AUTO-GENERATED - ne pas éditer manuellement
 // Regénérer avec : node scripts/vturias-scan-galleries.mjs
 export const GALLERY_MANIFEST: Record<string, string[]> = {
   "aurore": [
