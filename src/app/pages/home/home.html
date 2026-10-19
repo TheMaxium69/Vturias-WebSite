@@ -107,7 +107,7 @@
     <div class="talents-grid">
       @for (talent of talents; track talent.name) {
         <a class="talent-card" [routerLink]="['/talent', talent.slug]" [style.--tc]="talent.color">
-          <img class="talent-card__img" [src]="talent.images.fullBody" [alt]="talent.name" />
+          <img loading="lazy" decoding="async" class="talent-card__img" [src]="talent.images.fullBody" [alt]="talent.name" />
           <div class="talent-card__footer">
             <span class="talent-card__name">{{ talent.name }}</span>
           </div>

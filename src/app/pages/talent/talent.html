@@ -77,7 +77,7 @@
         <div class="talent-gallery">
           @for (img of gallery(); track img; let i = $index) {
             <div class="talent-gallery__item" (click)="openLightbox(i)">
-              <img [src]="img" [alt]="t.name" />
+              <img loading="lazy" decoding="async" [src]="img" [alt]="t.name" />
             </div>
           }
         </div>
@@ -92,7 +92,7 @@
       <button class="lb-arrow lb-arrow--prev" (click)="$event.stopPropagation(); prev()">
         <i class="ri-arrow-left-s-line"></i>
       </button>
-      <img class="lb-img" [src]="gallery()[lightboxIndex()!]" [alt]="t.name" (click)="$event.stopPropagation()" />
+      <img loading="lazy" decoding="async" class="lb-img" [src]="gallery()[lightboxIndex()!]" [alt]="t.name" (click)="$event.stopPropagation()" />
       <button class="lb-arrow lb-arrow--next" (click)="$event.stopPropagation(); next()">
         <i class="ri-arrow-right-s-line"></i>
       </button>
