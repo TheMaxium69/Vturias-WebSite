@@ -1,8 +1,8 @@
-import { Component, computed, inject, signal, HostListener, ViewEncapsulation } from '@angular/core';
+import { Component, computed, effect, inject, signal, HostListener, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
-import { TyroUiLangService } from 'tyrolium-ui';
+import { TyroUiLangService, TyroUiSeoService } from 'tyrolium-ui';
 import { TALENTS } from '../../data/talents.data';
 import { GALLERY_MANIFEST } from '../../data/gallery-manifest.generated';
 
@@ -24,6 +24,20 @@ export class TalentPage {
   readonly talent = computed(() =>
     TALENTS.find(t => t.slug === this.slug()) ?? null
   );
+
+  private readonly seo = inject(TyroUiSeoService);
+
+  constructor() {
+    effect(() => {
+      const t = this.talent();
+      if (!t) return;
+      this.seo.set({
+        title:       { fr: t.name, en: t.name },
+        description: { fr: t.description.fr, en: t.description.en },
+        image:       encodeURI(`https://vturias.fr/${t.images.avatar}`),
+      });
+    });
+  }
 
   readonly gallery = computed(() => {
     const t = this.talent();
