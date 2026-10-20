@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "Vturias",
+  "short_name": "Vturias",
+  "description": "Vturias est une agence de VTubing française dédiée à la création, la promotion et le développement des talents virtuels. Une filiale de Tyrolium, née du partenariat avec la VTubeuse AuroreTVv.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
